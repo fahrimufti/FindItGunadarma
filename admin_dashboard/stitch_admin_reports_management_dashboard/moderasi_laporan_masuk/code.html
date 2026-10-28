@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-high": "#dce9ff", "on-primary-container": "#fffbff", "surface-variant": "#d3e4fe", "inverse-primary": "#c0c1ff", "secondary": "#565e74", "outline-variant": "#c7c4d7", "on-tertiary-fixed-variant": "#005236", "background": "#f8f9ff", "tertiary-fixed-dim": "#4edea3", "secondary-fixed": "#dae2fd", "on-secondary-fixed-variant": "#3f465c", "surface-dim": "#cbdbf5", "tertiary": "#006c49", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#bec6e0", "on-background": "#0b1c30", "on-primary-fixed-variant": "#2f2ebe", "primary-fixed": "#e1e0ff", "primary-fixed-dim": "#c0c1ff", "surface-tint": "#494bd6", "on-secondary-container": "#5c647a", "on-tertiary-container": "#000703", "on-error": "#ffffff", "on-primary-fixed": "#07006c", "on-primary": "#ffffff", "on-secondary-fixed": "#131b2e", "tertiary-container": "#00885d", "error": "#ba1a1a", "error-container": "#ffdad6", "surface": "#f8f9ff", "surface-container-highest": "#d3e4fe", "outline": "#767586", "tertiary-fixed": "#6ffbbe", "inverse-on-surface": "#eaf1ff", "on-secondary": "#ffffff", "primary": "#4648d4", "on-tertiary": "#ffffff", "on-surface": "#0b1c30", "on-tertiary-fixed": "#002113", "primary-container": "#6063ee", "surface-container": "#e5eeff", "on-error-container": "#93000a", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "surface-container-low": "#eff4ff", "secondary-container": "#dae2fd", "on-surface-variant": "#464554" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-md": "1rem", "margin": "2rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem" }, fontFamily: { "headline-md": ["Inter"], "headline-xl-mobile": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "label-md": ["Inter"], "stat-display": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"] }, fontSize: { "headline-md": ["18px", {"lineHeight": "24px", "fontWeight": "600"}], "headline-xl-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}], "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700"}], "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}], "stat-display": ["28px", {"lineHeight": "34px", "fontWeight": "700"}], "headline-lg": ["22px", {"lineHeight": "28px", "fontWeight": "600"}], "headline-xl": ["30px", {"lineHeight": "38px", "fontWeight": "700"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Dash Admin Shield Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XgUBdJToZ2yEVsNbLQO5AfmO3I2EBIXSeEzHzELZU4QXM9LBCInbc8U4FtBeAN9WDPqlzi4fC5PiNmz2Hs3iifQYSbXMnTn0c6wDnlEODRLpUOYrI9j8CmZDhkeNChYbWJ0_H9U6krzm5JAgUwPjL8Yv0Mq9Tun5fQh-IUMwtiEMLAgwGXZxpR6iQJvmCf9h0n5MAaq4xI6wTN60XQzvvxp2fSY4ScOaRRMm7RfGNgjlUYSY4Bab2MkfMI"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface">Admin Desk</span><span class="font-label-sm text-label-sm bg-primary/10 text-primary px-1.5 py-0.5 rounded-full">Super Admin</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Moderasi</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifikasi" class="relative w-11 h-11 flex items-center justify-center rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-4 h-4 bg-error text-on-error rounded-full flex items-center justify-center font-label-sm text-[9px] font-bold">5</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Brand Overlapping Hero Banner -->
+<div class="bg-primary text-on-primary px-margin-mobile pt-space-lg pb-14 rounded-b-3xl shadow-sm relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Pusat Validasi Data</span>
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/15 px-2.5 py-1 rounded-full font-label-md text-label-md text-on-primary">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
+          Live Stream
+        </span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-primary font-bold tracking-tight">Moderasi Laporan</h1>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Pemeriksaan dan filter manual barang temuan/hilang sebelum tampil di publik.</p>
+</div>
+</div>
+<!-- Main Floating Content Container -->
+<div class="px-margin-mobile -mt-8 flex flex-col gap-space-md z-20">
+<!-- Status Switch Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-lg text-label-lg text-on-surface">Mode Moderasi</span>
+<span class="bg-tertiary-container text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full">Aktif</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Laporan baru disembunyikan sampai disetujui admin</p>
+</div>
+</div>
+<!-- Toggle Switch -->
+<button aria-checked="true" class="w-12 h-6 bg-primary rounded-full relative p-0.5 transition-colors focus:outline-none shrink-0" id="moderation-toggle" onclick="toggleModerationMode(this)" role="switch" type="button">
+<span class="block w-5 h-5 bg-surface-container-lowest rounded-full shadow-sm transform translate-x-6 transition-transform"></span>
+</button>
+</div>
+<!-- Quick Stats Cards (2-Grid) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Perlu Tinjauan</span>
+<div class="w-8 h-8 rounded-lg bg-primary-fixed/50 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</div>
+</div>
+<div class="font-stat-display text-stat-display text-on-surface font-bold">3</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Tinggi Prioritas</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Telah Diproses</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed/40 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+</div>
+</div>
+<div class="font-stat-display text-stat-display text-on-surface font-bold">45</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Bulan Ini</span>
+</div>
+</div>
+<!-- Tab Pill Bar -->
+<div class="bg-surface-container-low p-1 rounded-xl flex items-center shadow-inner">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-1.5 transition-all" id="tab-queue" onclick="switchTab('queue')" type="button">
+<span>Antrean Baru</span>
+<span class="bg-primary text-on-primary px-1.5 py-0.2 rounded-full font-label-sm text-label-sm">3</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-lg text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-all hover:text-on-surface" id="tab-history" onclick="switchTab('history')" type="button">
+<span>Riwayat</span>
+<span class="bg-surface-container-highest text-on-surface-variant px-1.5 py-0.2 rounded-full font-label-sm text-label-sm">45</span>
+</button>
+</div>
+<!-- Verification Queue Feed -->
+<div class="flex flex-col gap-space-md" id="queue-feed">
+<!-- Item 1: Card Verifikasi Pending -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md p-space-md flex flex-col gap-space-sm transition-all duration-300" id="card-mod-512">
+<!-- Header Info Pelapor -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center font-label-lg text-label-lg text-on-secondary-container font-bold">
+              AD
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Amanda Darnell</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">15 menit lalu</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-bold">#MOD-512</span>
+</div>
+<!-- Detail Title & Badges -->
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold leading-snug">Dompet Kulit Cokelat berisi KTP &amp; Kartu ATM BCA</h2>
+<div class="flex flex-wrap items-center gap-1.5 mt-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+              Kantin Lantai 2
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">wallet</span>
+              Dompet &amp; Dokumen
+            </span>
+</div>
+</div>
+<!-- Evidence Image Thumbnail -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container-high h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="A genuine close-up photograph of a brown bi-fold leather wallet lying on a bright cafeteria table, partially showing edges of Indonesian identification cards and standard payment cards under daylight ambient indoor lighting, shot realistically with crisp details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJGBhY9t3K5hrvHNhxpmHOyuPGZ5sSykc28E-TmYhTeb0K1NFcHWGw33SCxzROqPQqPcICURi1v9WnvyW_WqoL-ykfhT0VQ9e0pxxFZZ6FmzzPysFfNGnInkJATRKDuNilZ3yeu7_g4JWKTX0ianwntp-zz73QsuGqPz1ZYQKiai4QtPJm0nkGyfHQd7hnybzgB_slwY79MHb2LmzaTgIhtnib030DYRyWgHmxGTJCawK-EbOZn9TiRQ"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+            1 Bukti Foto
+          </div>
+</div>
+<!-- Reporter's Note Box -->
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-start gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] shrink-0 mt-0.5">chat</span>
+<p class="font-body-sm text-body-sm text-on-surface italic">"Ditemukan dekat meja kasir sekitar pukul 12.30"</p>
+</div>
+<!-- 4 Moderation Quick Actions (Action Grid) -->
+<div class="pt-1 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Aksi Keputusan</span>
+<div class="grid grid-cols-2 gap-2">
+<!-- 1. Tombol Hijau: Setujui -->
+<button class="h-10 rounded-lg bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="showFeedback('card-mod-512', 'disetujui')" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+              Setujui &amp; Rilis
+            </button>
+<!-- 2. Tombol Merah: Tolak -->
+<button class="h-10 rounded-lg bg-error hover:opacity-90 text-on-error font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="triggerConfirm('card-mod-512', 'Tolak Laporan #MOD-512?')" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+              Tolak Laporan
+            </button>
+<!-- 3. Tombol Sembunyikan (Secondary Container) -->
+<button class="h-10 rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-transform" onclick="showFeedback('card-mod-512', 'disembunyikan')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility_off</span>
+              Sembunyikan
+            </button>
+<!-- 4. Tombol Arsipkan (Soft Surface High) -->
+<button class="h-10 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-transform" onclick="showFeedback('card-mod-512', 'diarsipkan')" type="button">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+              Arsipkan
+            </button>
+</div>
+</div>
+</article>
+<!-- Item 2: Card Verifikasi Pending -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md p-space-md flex flex-col gap-space-sm transition-all duration-300" id="card-mod-513">
+<!-- Header Info Pelapor -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-lg text-label-lg font-bold">
+              DN
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Darshini Nair</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">32 menit lalu</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-bold">#MOD-513</span>
+</div>
+<!-- Detail Title & Badges -->
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold leading-snug">Kunci Motor Honda Vario dengan Gantungan Kulit Hitam</h2>
+<div class="flex flex-wrap items-center gap-1.5 mt-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">local_parking</span>
+              Parkir B1 (Tiang B4)
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">key</span>
+              Kendaraan
+            </span>
+</div>
+</div>
+<!-- Evidence Image Thumbnail -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container-high h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="A detailed photo of a modern black remote motorbike smartkey with a dark braided leather keychain lying on concrete basement parking pavement with painted yellow parking line visible, sharp focus, natural fluorescent overhead garage lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9W0bJP1AygR5so5l8I_T7USfeC2LH9WnlslJdvYP-qcCr1Ccv7kfz8D-x5bVeBchVjJAJFBVeYQyfrBdbRtnli40EhDHP91D8KNObEqVvA1ySv5MSP2v-2wmqdeUpZsUqwKdhuuJtuVkeCoFHDYJpsMxhUDwBBdXbhWtmx7dvp10p0FCR_sWm9QLUwQXd6EvjZ5dhl0fAgl3IA9jiyplMYKH1OBWfaHVgir_vELuR-gmjo_6SrOYiiw"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+            1 Bukti Foto
+          </div>
+</div>
+<!-- Reporter's Note Box -->
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-start gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] shrink-0 mt-0.5">chat</span>
+<p class="font-body-sm text-body-sm text-on-surface italic">"Tergantung di stang motor dekat tiang B4, saya amankan ke pos satpam."</p>
+</div>
+<!-- 4 Moderation Quick Actions (Action Grid) -->
+<div class="pt-1 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Aksi Keputusan</span>
+<div class="grid grid-cols-2 gap-2">
+<!-- 1. Tombol Hijau: Setujui -->
+<button class="h-10 rounded-lg bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="showFeedback('card-mod-513', 'disetujui')" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+              Setujui &amp; Rilis
+            </button>
+<!-- 2. Tombol Merah: Tolak -->
+<button class="h-10 rounded-lg bg-error hover:opacity-90 text-on-error font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="triggerConfirm('card-mod-513', 'Tolak Laporan #MOD-513?')" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+              Tolak Laporan
+            </button>
+<!-- 3. Tombol Sembunyikan (Secondary Container) -->
+<button class="h-10 rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-transform" onclick="showFeedback('card-mod-513', 'disembunyikan')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility_off</span>
+              Sembunyikan
+            </button>
+<!-- 4. Tombol Arsipkan (Soft Surface High) -->
+<button class="h-10 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-transform" onclick="showFeedback('card-mod-513', 'diarsipkan')" type="button">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+              Arsipkan
+            </button>
+</div>
+</div>
+</article>
+</div>
+<!-- Riwayat Moderasi Feed (Hidden initially) -->
+<div class="hidden flex-col gap-space-sm" id="history-feed">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Laptop MacBook Air M2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Disetujui oleh Anda • Hari ini 09:12</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-0.5 rounded-full">Publik</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Bot Spam Promosi Game</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ditolak permanen • Kemarin 16:45</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-error-container text-on-error-container px-2 py-0.5 rounded-full">Ditolak</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Botol Minum Tumbler Hitam</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Diarsipkan • 2 hari lalu</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full">Arsip</span>
+</div>
+</div>
+<!-- Empty State Micro-delight (Hidden until both items cleared) -->
+<div class="hidden bg-surface-container-lowest p-space-xl rounded-xl shadow-sm text-center flex flex-col items-center gap-3" id="empty-state-notice">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed/60 flex items-center justify-center text-tertiary mb-1">
+<span class="material-symbols-outlined text-[36px]">sentiment_very_satisfied</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Semua Laporan Telah Bersih!</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">Tidak ada lagi antrean moderasi baru. Kerja bagus, admin!</p>
+</div>
+</div>
+<!-- Rejection Visual Confirmation Dialog Overlay -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-gutter-mobile" id="confirm-modal">
+<div class="bg-surface-container-lowest w-full max-w-sm rounded-2xl shadow-2xl p-space-lg flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-error-container text-error flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+</div>
+<div class="flex flex-col text-center gap-1">
+<h4 class="font-headline-md text-headline-md text-on-surface" id="confirm-title">Konfirmasi Penolakan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Laporan ini tidak akan dipublikasikan dan pelapor akan menerima notifikasi penjelasan.</p>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full h-11 rounded-lg bg-error text-on-error font-label-lg text-label-lg font-semibold flex items-center justify-center shadow-sm" id="confirm-action-btn" type="button">
+          Ya, Tolak Laporan
+        </button>
+<button class="w-full h-11 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center" onclick="closeConfirmModal()" type="button">
+          Batal
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Dynamic Feedback -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2 rounded-full shadow-lg font-label-md text-label-md flex items-center gap-2 transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300" id="toast-pill">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">check_circle</span>
+<span id="toast-message">Status berhasil diperbarui</span>
+</div>
+</div>
+<script>
+  let activePendingCount = 2;
+  let targetCardToDelete = null;
+
+  function toggleModerationMode(btn) {
+    const isChecked = btn.getAttribute('aria-checked') === 'true';
+    const knob = btn.firstElementChild;
+    if (isChecked) {
+      btn.setAttribute('aria-checked', 'false');
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-secondary-fixed');
+      knob.classList.remove('translate-x-6');
+      knob.classList.add('translate-x-0');
+      triggerToast('Mode moderasi dinonaktifkan (Otomatis Lolos)');
+    } else {
+      btn.setAttribute('aria-checked', 'true');
+      btn.classList.remove('bg-secondary-fixed');
+      btn.classList.add('bg-primary');
+      knob.classList.remove('translate-x-0');
+      knob.classList.add('translate-x-6');
+      triggerToast('Mode moderasi aktif');
+    }
+  }
+
+  function switchTab(tab) {
+    const tabQueue = document.getElementById('tab-queue');
+    const tabHistory = document.getElementById('tab-history');
+    const queueFeed = document.getElementById('queue-feed');
+    const historyFeed = document.getElementById('history-feed');
+    const emptyNotice = document.getElementById('empty-state-notice');
+
+    if (tab === 'queue') {
+      tabQueue.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      tabQueue.classList.remove('text-on-surface-variant');
+      tabHistory.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      tabHistory.classList.add('text-on-surface-variant');
+      historyFeed.classList.add('hidden');
+      historyFeed.classList.remove('flex');
+      if (activePendingCount > 0) {
+        queueFeed.classList.remove('hidden');
+        queueFeed.classList.add('flex');
+        emptyNotice.classList.add('hidden');
+      } else {
+        emptyNotice.classList.remove('hidden');
+        emptyNotice.classList.add('flex');
+      }
+    } else {
+      tabHistory.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      tabHistory.classList.remove('text-on-surface-variant');
+      tabQueue.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      tabQueue.classList.add('text-on-surface-variant');
+      queueFeed.classList.add('hidden');
+      queueFeed.classList.remove('flex');
+      emptyNotice.classList.add('hidden');
+      historyFeed.classList.remove('hidden');
+      historyFeed.classList.add('flex');
+    }
+  }
+
+  function showFeedback(cardId, actionName) {
+    const card = document.getElementById(cardId);
+    if (!card) return;
+    card.classList.add('opacity-0', 'scale-95');
+    setTimeout(() => {
+      card.remove();
+      activePendingCount--;
+      triggerToast('Laporan berhasil ' + actionName);
+      if (activePendingCount <= 0) {
+        const emptyNotice = document.getElementById('empty-state-notice');
+        emptyNotice.classList.remove('hidden');
+        emptyNotice.classList.add('flex');
+      }
+    }, 280);
+  }
+
+  function triggerConfirm(cardId, message) {
+    targetCardToDelete = cardId;
+    const modal = document.getElementById('confirm-modal');
+    const title = document.getElementById('confirm-title');
+    title.innerText = message;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+
+    const confirmBtn = document.getElementById('confirm-action-btn');
+    confirmBtn.onclick = function() {
+      closeConfirmModal();
+      showFeedback(targetCardToDelete, 'ditolak & dihapus');
+    };
+  }
+
+  function closeConfirmModal() {
+    const modal = document.getElementById('confirm-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    targetCardToDelete = null;
+  }
+
+  function triggerToast(msg) {
+    const toast = document.getElementById('toast-pill');
+    const msgEl = document.getElementById('toast-message');
+    msgEl.innerText = msg;
+    toast.classList.remove('translate-y-12', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-12', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2400);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/80 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-16 h-12 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Ringkasan</span></a><a class="flex flex-col items-center justify-center w-16 h-12 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="daftar-laporan" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Laporan</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-12 rounded-lg transition-colors text-primary font-bold" data-path="moderasi" href="#"><span class="material-symbols-outlined text-[22px]">verified</span><span class="font-label-sm text-label-sm mt-0.5">Moderasi</span></a><a class="flex flex-col items-center justify-center w-16 h-12 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="serah-terima" href="#"><span class="material-symbols-outlined text-[22px]">assignment_turned_in</span><span class="font-label-sm text-label-sm mt-0.5">Serah Terima</span></a></div></nav></body></html>
